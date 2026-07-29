@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071713" />
+    <meta name="description" content="الإبداع للسيارات في الرياض — مخزون واضح، تمويل، بدل، شحن، وإدارة ذكية لرحلة العميل." />
+    <title>الإبداع للسيارات | الرياض</title>
+    <link rel="icon" href="media/logo-tiktok.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="showroom.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="الإبداع للسيارات">
+        <img src="media/logo-tiktok.svg" alt="شعار الإبداع للسيارات" />
+        <span><strong>الإبداع للسيارات</strong><small>بيع · استيراد · حلول تمويلية</small></span>
+      </a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#inventory">السيارات</a>
+        <a href="#customer-solutions">خدمات المشتري</a>
+        <a href="#dealer-system">نظام المعرض</a>
+        <a href="#reviews">آراء العملاء</a>
+        <a href="#location">الموقع</a>
+      </nav>
+      <div class="header-actions">
+        <button class="saved-button" data-open="saved" type="button">المحفوظة <span id="saved-count">0</span></button>
+        <a class="button button-primary header-cta" data-whatsapp="أرغب بالتحدث مع مستشار مبيعات" href="#">واتساب المستشار</a>
+      </div>
+      <button class="menu-button" id="menu-button" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media">
+          <img src="media/hero-alebda3.svg" alt="سيارة داخل معرض الإبداع للسيارات" />
+          <div class="hero-shade"></div>
+          <div class="hero-glow"></div>
+        </div>
+        <div class="shell hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow light"><span class="live-dot"></span> مخزون مرتب · قرار أوضح · رد أسرع</p>
+            <h1>سيارتك القادمة،<br /><em>بدون أسئلة ضائعة.</em></h1>
+            <p>شاهد المتاح، افهم التفاصيل، قارن الخيارات، واحصل على طلب تمويل أو بدل مرتب يصل للمستشار باسم السيارة من أول رسالة.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#inventory">تصفح السيارات <span>←</span></a>
+              <button class="button button-glass" data-open="match" type="button">ساعدني أختار <span>⌁</span></button>
+            </div>
+            <div class="hero-stats" aria-label="مؤشرات المعرض">
+              <div><strong>129.9K</strong><span>متابع على تيك توك</span></div>
+              <div><strong>4.1/5</strong><span>تقييم Google</span></div>
+              <div><strong>116</strong><span>تقييمًا منشورًا</span></div>
+            </div>
+          </div>
+          <aside class="hero-card reveal">
+            <span class="card-kicker">اختيار هذا الأسبوع</span>
+            <img src="media/car-elantra-black.svg" alt="هيونداي إلنترا 2026 سوداء" />
+            <div class="hero-card-title">
+              <div><small>تسليم فوري — يؤكد عند الطلب</small><h2>إلنترا Comfort 2026</h2></div>
+              <b>السعر عند الطلب</b>
+            </div>
+            <div class="hero-card-tags"><span>جديدة</span><span>كاش وتمويل</span><span>شحن للمملكة</span></div>
+            <button class="button button-dark full" data-vehicle="elantra-black" type="button">شاهد جميع التفاصيل <span>←</span></button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="quick-actions shell reveal" aria-label="اختصارات">
+        <a href="#inventory"><span>⌕</span><strong>المخزون الحي</strong><small>بحث وتصفية ومقارنة</small></a>
+        <button type="button" data-open="finance"><span>◒</span><strong>طلب تمويل</strong><small>تأهيل أولي بلا مستندات</small></button>
+        <button type="button" data-open="trade"><span>↻</span><strong>بع أو بدّل</strong><small>تقييم أولي من الجوال</small></button>
+        <button type="button" data-open="testdrive"><span>◉</span><strong>احجز معاينة</strong><small>زيارة أو اتصال عن بعد</small></button>
+        <button type="button" data-open="request"><span>◎</span><strong>اطلب سيارة</strong><small>لو لم تجدها بالمخزون</small></button>
+        <a href="#location"><span>⌖</span><strong>زر المعرض</strong><small>الشفا — الرياض</small></a>
+      </section>
+
+      <section class="section shell" id="inventory">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">مخزون منظم حول قرارك</p><h2>ابحث بالطريقة التي تفكر بها</h2></div>
+          <p class="section-note">كل الأسعار والتوفر والمواصفات النهائية يؤكدها المعرض قبل الحجز.</p>
+        </div>
+        <form class="inventory-search reveal" id="inventory-search">
+          <label>بحث سريع<input id="text-filter" placeholder="ماركة، موديل أو فئة" /></label>
+          <label>الماركة<select id="brand-filter"><option value="all">كل الماركات</option><option>هيونداي</option><option>كيا</option><option>مرسيدس</option><option>فورد</option></select></label>
+          <label>السنة<select id="year-filter"><option value="all">كل السنوات</option><option value="2026">2026</option><option value="2025">2025</option><option value="2021">2021</option></select></label>
+          <label>نوع الهيكل<select id="body-filter"><option value="all">كل الأنواع</option><option value="سيدان">سيدان</option><option value="SUV">SUV</option><option value="كوبيه">كوبيه</option></select></label>
+          <label>طريقة الشراء<select id="purchase-filter"><option value="all">كاش أو تمويل</option><option value="finance">تمويل متاح</option><option value="cash">كاش</option></select></label>
+          <button class="button button-primary" type="submit">اعرض النتائج</button>
+        </form>
+        <div class="inventory-toolbar reveal">
+          <span id="inventory-summary">6 سيارات ضمن العرض</span>
+          <div><button class="text-button" type="button" data-reset>إعادة الضبط</button><button class="compare-button" id="open-compare" type="button" disabled>المقارنة <b id="compare-count">0</b></button></div>
+        </div>
+        <div class="inventory-grid" id="inventory-grid"></div>
+        <div class="inventory-note reveal">
+          <div><span>لم تجد السيارة المطلوبة؟</span><p>أرسل الماركة والموديل والميزانية وطريقة الشراء، وسيصل طلب منظم للفريق.</p></div>
+          <button class="button button-outline" data-open="request" type="button">اطلب سيارة خاصة</button>
+        </div>
+      </section>
+
+      <section class="social-showcase">
+        <div class="shell social-layout">
+          <div class="social-copy reveal">
+            <p class="eyebrow light">من حساب المعرض على TikTok</p>
+            <h2>شاهد العرض،<br /><em>ثم انتقل للمعلومة.</em></h2>
+            <p>نستفيد من قوة محتوى المعرض، ثم نضيف ما ينقصه: صفحة السيارة، السعر، التمويل، التوفر، الشحن وزر يحمل اسم السيارة للمستشار.</p>
+            <div class="social-metrics"><div><strong>50.8K</strong><span>مشاهدة لأحد العروض</span></div><div><strong>461.1K</strong><span>إعجاب بالحساب</span></div><div><strong>129.9K</strong><span>متابع</span></div></div>
+            <a class="button button-light" href="https://www.tiktok.com/@alebda3_1" target="_blank" rel="noopener">افتح حساب المعرض ↗</a>
+          </div>
+          <a class="social-media-card reveal" href="https://www.tiktok.com/@alebda3_1/video/7664074730709814546" target="_blank" rel="noopener" aria-label="شاهد العرض على تيك توك">
+            <div class="social-phone">
+              <img src="media/tiktok-video-cover.svg" alt="لقطة من عرض المعرض على تيك توك" />
+              <span class="play-orb">▶</span>
+            </div>
+            <div class="social-card-foot"><div><strong>هيونداي إلنترا 2026</strong><small>عرض من حساب الإبداع للسيارات</small></div><b>شاهد على TikTok ↗</b></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="decision-section" id="customer-solutions">
+        <div class="shell">
+          <div class="section-heading light-heading reveal">
+            <div><p class="eyebrow light">حلول المشتري قبل التواصل</p><h2>كل سؤال مهم في مكانه</h2></div>
+            <span class="section-note light-note">لا تخمين في السعر أو التوفر أو الخطوة التالية</span>
+          </div>
+          <div class="decision-grid">
+            <article class="decision-card reveal"><span>01</span><i>✓</i><h3>تأكيد التوفر</h3><p>حالة واضحة: متاحة، محجوزة، تحت الفحص أو مباعة، مع وقت آخر تحديث.</p><b>يمنع مشوارًا على سيارة مباعة</b></article>
+            <article class="decision-card reveal"><span>02</span><i>≋</i><h3>مقارنة مفيدة</h3><p>الفئة والسنة والهيكل واللون والتمويل والضمان في جدول واحد.</p><b>يقلل التشتت بين الإعلانات</b></article>
+            <article class="decision-card reveal"><span>03</span><i>◒</i><h3>قسط تقديري</h3><p>حاسبة توضح السعر والدفعة والمدة والتكلفة قبل طلب التمويل.</p><b>تأهيل أفضل قبل المندوب</b></article>
+            <article class="decision-card reveal"><span>04</span><i>♢</i><h3>طبقة الثقة</h3><p>الفحص والضمان والصيانة والملاحظات والمصدر دون ادعاءات غير معتمدة.</p><b>إجابة مبكرة عن مخاوف المستعمل</b></article>
+            <article class="decision-card reveal"><span>05</span><i>↻</i><h3>بيع أو بدل</h3><p>رفع بيانات السيارة الحالية وصورها قبل تحديد موعد التقييم.</p><b>يمنع الزيارات غير المناسبة</b></article>
+            <article class="decision-card reveal"><span>06</span><i>↗</i><h3>استلام وشحن</h3><p>خطوة واضحة لعميل الرياض أو العميل البعيد في أي مدينة بالمملكة.</p><b>يوسّع السوق خارج موقع المعرض</b></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell finance-section" id="finance-planner">
+        <div class="finance-banner reveal">
+          <img src="media/banner-finance.svg" alt="حلول تمويل السيارات" />
+          <div class="banner-overlay"></div>
+          <div class="finance-copy"><p class="eyebrow light">مخطط التمويل التقديري</p><h2>ابدأ من قدرتك،<br /><em>ثم اختر السيارة.</em></h2><p>الحساب للتوضيح فقط ولا يمثل عرضًا أو موافقة نهائية.</p></div>
+        </div>
+        <div class="calculator reveal">
+          <div class="calculator-controls">
+            <label>سعر السيارة التقديري<strong id="calc-price-label">85,000 ر.س</strong><input id="calc-price" type="range" min="50000" max="250000" step="5000" value="85000" /></label>
+            <label>الدفعة الأولى<strong id="calc-down-label">10,000 ر.س</strong><input id="calc-down" type="range" min="0" max="100000" step="5000" value="10000" /></label>
+            <div class="form-row"><label>مدة التمويل<select id="calc-term"><option value="36">36 شهرًا</option><option value="48">48 شهرًا</option><option value="60" selected>60 شهرًا</option></select></label><label>النسبة السنوية التقديرية<input id="calc-rate" type="number" min="0" max="25" step=".1" value="5.5" /></label></div>
+          </div>
+          <div class="calculator-result">
+            <span>القسط الشهري التقديري</span><strong id="calc-monthly">—</strong><small>إجمالي التمويل التقريبي: <b id="calc-total">—</b></small>
+            <div class="result-breakdown"><div><span>المبلغ الممول</span><b id="calc-financed">—</b></div><div><span>عدد الأشهر</span><b id="calc-months">60</b></div></div>
+            <button class="button button-primary full" data-open="finance" type="button">حوّل الحساب إلى طلب تمويل</button>
+            <p>تخضع النتيجة لشروط جهة التمويل والراتب والقطاع والالتزامات.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell service-showcase">
+        <article class="service-banner reveal">
+          <img src="media/banner-trade.svg" alt="خدمة بيع أو استبدال السيارة" />
+          <div class="service-gradient"></div>
+          <div><p class="eyebrow light">بع أو بدّل</p><h3>سيارتك الحالية جزء من الصفقة</h3><p>أرسل البيانات والصور، واحصل على تقييم أولي قبل الزيارة.</p><button class="button button-light" data-open="trade" type="button">ابدأ التقييم</button></div>
+        </article>
+        <article class="service-banner reveal">
+          <img src="media/banner-delivery.svg" alt="تجهيز واستلام السيارة" />
+          <div class="service-gradient"></div>
+          <div><p class="eyebrow light">طلب عن بُعد</p><h3>من العرض إلى التسليم</h3><p>تأكيد السيارة، المستندات، الموعد والشحن بخطوات واضحة.</p><button class="button button-light" data-open="delivery" type="button">اعرف خطوات الاستلام</button></div>
+        </article>
+      </section>
+
+      <section class="dealer-section" id="dealer-system">
+        <div class="shell">
+          <div class="section-heading light-heading reveal">
+            <div><p class="eyebrow light">نظام المعرض من الداخل</p><h2>الموقع يصبح مصدرًا واحدًا للمخزون والعملاء</h2></div>
+            <span class="demo-badge">نموذج تشغيلي تفاعلي</span>
+          </div>
+          <div class="dealer-problems reveal">
+            <div><span>المشكلة</span><strong>بيانات السيارة موزعة بين واتساب وحراج وجوالات الموظفين</strong></div>
+            <b>←</b>
+            <div><span>الحل</span><strong>إدخال واحد، رابط واحد، وحالة واحدة تتحدث في كل مكان</strong></div>
+          </div>
+          <div class="dealer-tabs reveal" role="tablist" aria-label="أقسام نظام المعرض">
+            <button class="is-active" data-dealer-tab="entry" type="button">إضافة سيارة</button>
+            <button data-dealer-tab="inventory" type="button">صحة المخزون</button>
+            <button data-dealer-tab="leads" type="button">العملاء والمندوبون</button>
+            <button data-dealer-tab="insights" type="button">التقارير والركود</button>
+          </div>
+          <div class="dealer-panel reveal" id="dealer-panel"></div>
+          <div class="integration-strip reveal">
+            <div><span>يتكامل مع قنوات العمل</span><strong>بدل إعادة إدخال السيارة في كل مكان</strong></div>
+            <span>واتساب</span><span>حراج</span><span>TikTok</span><span>Excel / CSV</span><span>Analytics</span><span>CRM</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell journey-section">
+        <div class="section-heading reveal"><div><p class="eyebrow">رحلة كاملة قابلة للقياس</p><h2>من دخول السيارة إلى ما بعد البيع</h2></div></div>
+        <div class="journey">
+          <article class="reveal"><span>01</span><i>＋</i><h3>إضافة</h3><p>صور أو VIN أو Excel، ثم مراجعة البيانات الناقصة.</p><b>الهدف: نشر أسرع</b></article>
+          <article class="reveal"><span>02</span><i>▣</i><h3>نشر</h3><p>بطاقة السيارة، رابط مشاركة، وقوالب القنوات.</p><b>الهدف: بيانات موحدة</b></article>
+          <article class="reveal"><span>03</span><i>⌕</i><h3>اكتشاف</h3><p>بحث وفلاتر ومقارنة وقسط تقديري.</p><b>الهدف: عميل أفهم</b></article>
+          <article class="reveal"><span>04</span><i>◉</i><h3>تأهيل</h3><p>كاش أو تمويل أو بدل مع مصدر واضح للطلب.</p><b>الهدف: طلب مفيد</b></article>
+          <article class="reveal"><span>05</span><i>✓</i><h3>متابعة</h3><p>إسناد مندوب، موعد، تنبيه تأخير وحالة الصفقة.</p><b>الهدف: لا عميل ضائع</b></article>
+          <article class="reveal"><span>06</span><i>♢</i><h3>ملكية</h3><p>تسليم، ضمان، صيانة وتقييم بعد الشراء.</p><b>الهدف: علاقة مستمرة</b></article>
+        </div>
+      </section>
+
+      <section class="reviews-section" id="reviews">
+        <div class="shell">
+          <div class="section-heading light-heading reveal">
+            <div><p class="eyebrow light">تقييمات منشورة على Google</p><h2>الثقة بصوت العملاء</h2></div>
+            <a class="text-link light" href="https://maps.app.goo.gl/UdR9YggUKb1D14529" target="_blank" rel="noopener">شاهد المصدر على Google ↗</a>
+          </div>
+          <div class="reviews-summary reveal">
+            <div class="rating-block"><strong>4.1</strong><div><span>★★★★★</span><small>من 116 تقييمًا منشورًا</small></div></div>
+            <p>التقييمات تبرز نظافة السيارات، الضمان، حسن التعامل والمتابعة. تظهر هنا كنصوص مصممة بعناية، مع إبقاء رابط المصدر الأصلي.</p>
+          </div>
+          <div class="review-evidence">
+            <figure class="review-shot reveal">
+              <div class="review-shot-head"><span class="avatar">A</span><div><strong>Asrar</strong><small>Google · 5 نجوم · صورة التقييم الأصلية</small></div><b>موثق ✓</b></div>
+              <img src="media/google-review-asrar.svg" alt="تقييم Asrar الأصلي على Google" loading="lazy" />
+              <figcaption>نظافة السيارات، الضمان، والخدمة — تجربة 10/10.</figcaption>
+            </figure>
+            <figure class="review-shot reveal">
+              <div class="review-shot-head"><span class="avatar">S</span><div><strong>Star girl وBig Boy</strong><small>Google · 5 نجوم · صور التقييمات الأصلية</small></div><b>موثق ✓</b></div>
+              <img src="media/google-review-star-boy.svg" alt="تقييما Star girl وBig Boy الأصليان على Google" loading="lazy" />
+              <figcaption>تجربة مميزة، متابعة دقيقة وحسن تعامل.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell innovations" id="innovations">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">٢٠ حلًا داخل النظام</p><h2>كل ميزة مرتبطة بمشكلة قابلة للقياس</h2></div>
+          <span class="section-note">اضغط على أي حل لمعرفة أثره</span>
+        </div>
+        <div class="innovation-grid" id="innovation-grid"></div>
+      </section>
+
+      <section class="section shell faq-section">
+        <div class="section-heading reveal"><div><p class="eyebrow">الأسئلة قبل أن تتحول لمحادثة</p><h2>إجابات توفر وقت العميل والمندوب</h2></div></div>
+        <div class="faq-list">
+          <details class="reveal"><summary>هل السيارة متوفرة الآن؟</summary><p>تظهر حالة كل سيارة ووقت آخر تحديث، ويؤكد المستشار التوفر قبل الحجز أو الزيارة.</p></details>
+          <details class="reveal"><summary>هل السعر شامل الرسوم والضريبة؟</summary><p>يعتمد ذلك على السيارة ونوع العرض؛ يوضح المستشار السعر النقدي والرسوم قبل إكمال الطلب.</p></details>
+          <details class="reveal"><summary>هل يوجد تمويل؟ وكم القسط؟</summary><p>يمكن استخدام الحاسبة التقديرية ثم إرسال طلب أولي. القسط النهائي يخضع لشروط جهة التمويل.</p></details>
+          <details class="reveal"><summary>هل يمكن بيع أو استبدال سيارتي؟</summary><p>نعم، ابدأ ببيانات وصور بسيطة للحصول على تقييم أولي قبل موعد الفحص.</p></details>
+          <details class="reveal"><summary>هل تشحنون خارج الرياض؟</summary><p>المعرض يعلن استقبال الطلبات عن بُعد والشحن لمختلف مدن المملكة؛ تؤكد التفاصيل والتكلفة عند الطلب.</p></details>
+          <details class="reveal"><summary>كيف أتأكد من الفحص والضمان؟</summary><p>تعرض صفحة السيارة حالة الفحص والضمان المتاحة، وتُرسل الوثائق المعتمدة من المعرض قبل الشراء.</p></details>
+        </div>
+      </section>
+
+      <section class="location-section shell" id="location">
+        <div class="location-card reveal">
+          <div class="location-map"><span class="map-pin">⌖</span><div><small>موقع المعرض</small><strong>الشفا — الرياض</strong></div></div>
+          <div class="location-content">
+            <p class="eyebrow">نرحب بزيارتك</p><h2>شارع المعارض، الشفا</h2><p>الشفا، الرياض 14721 · رمز الموقع HM2J+JW</p>
+            <div class="hours"><span>يوميًا</span><strong>9:00 ص – 12:00 م</strong><strong>4:00 م – 10:00 م</strong></div>
+            <div class="location-actions"><a class="button button-primary" href="https://maps.app.goo.gl/UdR9YggUKb1D14529" target="_blank" rel="noopener">افتح خرائط Google ↗</a><a class="button button-outline" href="tel:0553355441">اتصال: 0553355441</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-strip">
+        <div class="shell contact-inner"><div><p class="eyebrow light">جاهز تبدأ؟</p><h2>أرسل اسم السيارة فقط، والباقي مرتب.</h2></div><div class="contact-actions"><a class="button button-light" data-whatsapp="السلام عليكم، أرغب بالاستفسار عن السيارات المتاحة" href="#">ابدأ على واتساب</a><a class="button button-glass" href="https://haraj.com.sa/users/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9/" target="_blank" rel="noopener">حراج المعرض ↗</a></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="brand footer-brand"><img src="media/logo-tiktok.svg" alt="" /><span><strong>الإبداع للسيارات</strong><small>الرياض — المملكة العربية السعودية</small></span></div>
+        <div><strong>أرقام المبيعات</strong><a href="tel:0546483121">0546483121</a><a href="tel:0553775018">0553775018</a><a href="tel:0537031513">0537031513</a></div>
+        <div><strong>الخدمات</strong><a href="#inventory">المخزون</a><button data-open="finance" type="button">التمويل</button><button data-open="trade" type="button">البيع والبدل</button></div>
+        <div><strong>تابع المعرض</strong><a href="https://www.tiktok.com/@alebda3_1" target="_blank" rel="noopener">TikTok ↗</a><a href="https://linktr.ee/Maralebda3" target="_blank" rel="noopener">جميع الروابط ↗</a><a href="https://haraj.com.sa/users/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9/" target="_blank" rel="noopener">حراج ↗</a></div>
+      </div>
+      <div class="shell footer-bottom"><span>© <span id="year"></span> الإبداع للسيارات</span><small>الصور التصميمية لعرض الهوية؛ الأسعار والتوفر والمواصفات النهائية يؤكدها المعرض.</small></div>
+    </footer>
+
+    <div class="compare-tray" id="compare-tray" hidden><span>أضفت <b id="tray-count">0</b> للمقارنة</span><button class="button button-light" id="tray-open" type="button">افتح المقارنة</button><button class="tray-close" id="tray-clear" type="button">مسح</button></div>
+    <a class="floating-whatsapp" data-whatsapp="السلام عليكم، أرغب بالاستفسار عن السيارات المتاحة" href="#" aria-label="تواصل عبر واتساب"><span>◉</span><b>واتساب</b></a>
+    <nav class="mobile-dock" aria-label="اختصارات الجوال"><a href="#inventory"><span>⌕</span>السيارات</a><button data-open="finance" type="button"><span>◒</span>تمويل</button><a class="dock-primary" data-whatsapp="السلام عليكم، أرغب بالاستفسار عن السيارات المتاحة" href="#"><span>◉</span>واتساب</a><a href="#location"><span>⌖</span>الموقع</a></nav>
+
+    <div class="modal-backdrop" id="modal-backdrop" hidden>
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" data-close aria-label="إغلاق">×</button><div id="modal-content"></div></section>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="showroom.js"></script>
+  </body>
+</html>
